@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dean's List Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Semester Dean's List Eligibility Results</h1>
+    
+    <div class="container">
+        
+        <div class="form-section">
+            <h2>Student Info</h2>
+            <div class="form-group">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" placeholder="Enter student name">
+            </div>
+            <div class="form-group">
+                <label for="creditHours">Credit Hours:</label>
+                <input type="number" id="creditHours" placeholder="Enter credit hours" min="1" max="30">
+            </div>
+            <div class="form-group">
+                <label for="currentGPA">Current GPA:</label>
+                <input type="number" id="currentGPA" placeholder="Enter GPA" min="0" max="4.00" step="0.01">
+            </div>
+            <div class="button-group">
+                <button onclick="checkEligibility()" class="btn">Check Eligibility</button>
+            </div>
+        </div>
+        
+        <div id="results-container"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
